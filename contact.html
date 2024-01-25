@@ -1,224 +1,374 @@
 <!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if IE 9]><html class="ie ie9"><![endif]-->
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>Logistica - Shipping Company Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="favicon.png" rel="icon">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Bready</title>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7CLora:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/bakery-icon/style.css">
+    <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css">
+    <link rel="stylesheet" href="plugins/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="plugins/slick/slick/slick.css">
+    <link rel="stylesheet" href="plugins/lightGallery-master/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!--WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    <!--[if IE 7]><body class="ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+    <!--[if IE 8]><body class="ie8 lt-ie9 lt-ie10"><![endif]-->
+    <!--[if IE 9]><body class="ie9 lt-ie10"><![endif]-->
+  </head>
+  <body>
+    <div class="ps-search">
+      <div class="ps-search__content"><a class="ps-search__close" href="#"><span></span></a>
+        <form class="ps-form--search-2" action="do_action" method="post">
+          <h3>Enter your keyword</h3>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="">
+            <button class="ps-btn active ps-btn--fullwidth">Search</button>
+          </div>
+        </form>
+      </div>
     </div>
-    <!-- Spinner End -->
-
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
-        <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
-            <h2 class="mb-2 text-white">Logistica</h2>
-        </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="price.html" class="dropdown-item">Pricing Plan</a>
-                        <a href="feature.html" class="dropdown-item">Features</a>
-                        <a href="quote.html" class="dropdown-item">Free Quote</a>
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+    <!-- header-->
+    <header class="header header--3" data-sticky="false">
+      <div class="header__top">
+        <div class="ps-container">
+          <div class="left">
+            <p>460 West 34th Street, 15th floor, New York  -  Hotline: 804-377-3580 - 804-399-3580</p>
+          </div>
+          <div class="right">
+            <div class="btn-group ps-dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">USD<i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"> USD</a></li>
+                <li><a href="#"> SGD</a></li>
+                <li><a href="#">JPN</a></li>
+              </ul>
             </div>
-            <h4 class="m-0 pe-lg-5 d-none d-lg-block"><i class="fa fa-headphones text-primary me-3"></i>+012 345 6789</h4>
+            <div class="btn-group ps-dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language<i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">English</a></li>
+                <li><a href="#">Japanese</a></li>
+              </ul>
+            </div>
+            <ul class="ps-list--social">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    <!-- Navbar End -->
-
-
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5" style="margin-bottom: 6rem;">
-        <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Contact Us</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
-                </ol>
-            </nav>
+      </div>
+      <nav class="navigation">
+        <div class="ps-container"><a class="ps-logo" href="homepage-3.html"><img src="images/logo-light.png" alt=""></a>
+          <div class="menu-toggle"><span></span></div>
+          <div class="header__actions"><a class="ps-search-btn" href="#"><i class="ba-magnifying-glass"></i></a><a href="#"><i class="ba-profile"></i></a>
+            <div class="ps-cart"><a class="ps-cart__toggle" href="#"><span><i>20</i></span><i class="ba-shopping"></i></a>
+              <div class="ps-cart__listing">
+                <div class="ps-cart__content">
+                  <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
+                    <div class="ps-cart-item__thumbnail"><a href="product-detail.html"></a><img src="images/shopping-cart/1.png" alt="">
+                    </div>
+                    <div class="ps-cart-item__content"><a class="ps-cart-item__title" href="product-detail.html">Kingsman</a>
+                      <p><span>Quantity:<i>12</i></span><span>Total:<i>£176</i></span></p>
+                    </div>
+                  </div>
+                  <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
+                    <div class="ps-cart-item__thumbnail"><a href="product-detail.html"></a><img src="images/shopping-cart/2.png" alt="">
+                    </div>
+                    <div class="ps-cart-item__content"><a class="ps-cart-item__title" href="product-detail.html">Joseph</a>
+                      <p><span>Quantity:<i>12</i></span><span>Total:<i>£176</i></span></p>
+                    </div>
+                  </div>
+                  <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
+                    <div class="ps-cart-item__thumbnail"><a href="product-detail.html"></a><img src="images/shopping-cart/3.png" alt="">
+                    </div>
+                    <div class="ps-cart-item__content"><a class="ps-cart-item__title" href="product-detail.html">Todd Snyder</a>
+                      <p><span>Quantity:<i>12</i></span><span>Total:<i>£176</i></span></p>
+                    </div>
+                  </div>
+                  <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
+                    <div class="ps-cart-item__thumbnail"><a href="product-detail.html"></a><img src="images/shopping-cart/1.png" alt="">
+                    </div>
+                    <div class="ps-cart-item__content"><a class="ps-cart-item__title" href="product-detail.html">Todd Snyder</a>
+                      <p><span>Quantity:<i>12</i></span><span>Total:<i>£176</i></span></p>
+                    </div>
+                  </div>
+                  <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
+                    <div class="ps-cart-item__thumbnail"><a href="product-detail.html"></a><img src="images/shopping-cart/1.png" alt="">
+                    </div>
+                    <div class="ps-cart-item__content"><a class="ps-cart-item__title" href="product-detail.html">Todd Snyder</a>
+                      <p><span>Quantity:<i>12</i></span><span>Total:<i>£176</i></span></p>
+                    </div>
+                  </div>
+                  <div class="ps-cart-item"><a class="ps-cart-item__close" href="#"></a>
+                    <div class="ps-cart-item__thumbnail"><a href="product-detail.html"></a><img src="images/shopping-cart/1.png" alt="">
+                    </div>
+                    <div class="ps-cart-item__content"><a class="ps-cart-item__title" href="product-detail.html">Todd Snyder</a>
+                      <p><span>Quantity:<i>12</i></span><span>Total:<i>£176</i></span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="ps-cart__total">
+                  <p>Number of items:<span>36</span></p>
+                  <p>Item Total:<span>£528.00</span></p>
+                </div>
+                <div class="ps-cart__footer"><a href="cart.html">Check out</a></div>
+              </div>
+            </div>
+          </div>
+          <ul class="menu">
+            <li class="menu-item-has-children"><a href="#">Homepage</a><span class="sub-toggle"><i class="fa fa-angle-down"></i></span>
+              <ul class="sub-menu">
+                <li><a href="index.html">Homepage 1</a></li>
+                <li><a href="homepage-2.html">Homepage 2</a></li>
+                <li><a href="homepage-3.html">Homepage 3</a></li>
+              </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li class="menu-item-has-children"><a href="product-listing.html">product</a><span class="sub-toggle"><i class="fa fa-angle-down"></i></span>
+              <ul class="sub-menu">
+                <li><a href="product-listing.html">Product List</a></li>
+                <li><a href="product-detail.html">Product Detail</a></li>
+                <li><a href="order-form.html">Order Form</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children"><a href="about.html">Pages</a><span class="sub-toggle"><i class="fa fa-angle-down"></i></span>
+              <ul class="sub-menu">
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="whishlist.html">Whishlist</a></li>
+                <li><a href="compare.html">Compare</a></li>
+                <li><a href="404-page.html">Page 404</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children"><a href="blog-grid.html">Blogs</a><span class="sub-toggle"><i class="fa fa-angle-down"></i></span>
+              <ul class="sub-menu">
+                <li><a href="blog-grid.html">Blog Grid</a></li>
+                <li class="menu-item-has-children"><a href="blog-list.html">Blog Listing</a><span class="sub-toggle"><i class="fa fa-angle-down"></i></span>
+                  <ul class="sub-menu">
+                    <li><a href="blog-list.html">Blog List Has Sidebar</a></li>
+                    <li><a href="blog-list.html">Blog List No Sidebar</a></li>
+                  </ul>
+                </li>
+                <li><a href="blog-detail.html">Blog Detail</a></li>
+              </ul>
+            </li>
+            <li class="current-menu-item "><a href="contact.html">Contact Us</a></li>
+          </ul>
         </div>
+      </nav>
+    </header>
+    <div class="ps-hero bg--cover" data-background="images/hero/contact.jpg">
+      <div class="ps-hero__content">
+        <h1>Contact Us</h1>
+        <div class="ps-breadcrumb">
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Contact Us</li>
+          </ol>
+        </div>
+      </div>
     </div>
-    <!-- Page Header End -->
-
-
-    <!-- Contact Start -->
-    <div class="container-fluid overflow-hidden py-5 px-lg-0">
-        <div class="container contact-page py-5 px-lg-0">
-            <div class="row g-5 mx-lg-0">
-                <div class="col-md-6 contact-form wow fadeIn" data-wow-delay="0.1s">
-                    <h6 class="text-secondary text-uppercase">Get In Touch</h6>
-                    <h1 class="mb-4">Contact For Any Query</h1>
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                    <div class="bg-light p-4">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+    <div id="contact-map" data-address="New York, NY" data-title="Funiture!" data-zoom="17"></div>
+    <div class="ps-contact">
+      <div class="ps-container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+            <form class="ps-form--contact" action="do_action" method="post">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                  <div class="form-group">
+                    <label>Name <sup>*</sup></label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
                 </div>
-                <div class="col-md-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s">
-                    <div class="position-relative h-100">
-                        <iframe class="position-absolute w-100 h-100" style="object-fit: cover;"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                        frameborder="0" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
-                    </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                  <div class="form-group">
+                    <label>Email <sup>*</sup></label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
                 </div>
+              </div>
+              <div class="form-group">
+                <label>Your Message <sup>*</sup></label>
+                <textarea class="form-control" rows="7"></textarea>
+              </div>
+              <div class="form-group submit">
+                <button class="ps-btn ps-btn--yellow">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
+            <div class="ps-contact__info">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                  <div class="ps-block--contact-2">
+                    <h3>OFFICE AT AMERICA</h3>
+                    <h4>BASEMENT COMPANY, NEW YORK</h4>
+                    <p><i class="fa fa-envelope-o"></i><a href="#">hello@example.com</a></p>
+                    <p><i class="fa fa-phone"></i> +1 650-253-0000</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                  <div class="ps-block--contact-2">
+                    <h3>OFFICE AT VIETNAM</h3>
+                    <h4>189/32 BASEMENT COMPANY, ABC, VIET NAM</h4>
+                    <p><i class="fa fa-envelope-o"></i><a href="#">hello@basis.com</a></p>
+                    <p><i class="fa fa-phone"></i> +1 650-253-0000</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                  <div class="ps-block--contact-2">
+                    <h3>OFFICE AT PARIS</h3>
+                    <h4>189/32 BASEMENT COMPANY, PARIS, FRANCE</h4>
+                    <p><i class="fa fa-envelope-o"></i><a href="#">hello@basis.com</a></p>
+                    <p><i class="fa fa-phone"></i> +1 650-253-0000</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+                  <div class="ps-block--contact-2">
+                    <h3>FOLLOW US</h3>
+                    <ul class="ps-list--social ps-list--social-simple">
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-feed"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <!-- Contact End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Services</h4>
-                    <a class="btn btn-link" href="">Air Freight</a>
-                    <a class="btn btn-link" href="">Sea Freight</a>
-                    <a class="btn btn-link" href="">Road Freight</a>
-                    <a class="btn btn-link" href="">Logistic Solutions</a>
-                    <a class="btn btn-link" href="">Industry solutions</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
+    <div class="ps-site-features">
+      <div class="ps-container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+            <div class="ps-block--iconbox"><i class="ba-delivery-truck-2"></i>
+              <h4>Free Shipping <span> On Order Over$199</h4>
+              <p>Want to track a package? Find tracking information and order details from Your Orders.</p>
             </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+            <div class="ps-block--iconbox"><i class="ba-biscuit-1"></i>
+              <h4>Master Chef<span> WITH PASSION</h4>
+              <p>Shop zillions of finds, with new arrivals added daily.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+            <div class="ps-block--iconbox"><i class="ba-flour"></i>
+              <h4>Natural Materials<span> protect your family</h4>
+              <p>We always ensure the safety of all products of store</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+            <div class="ps-block--iconbox"><i class="ba-cake-3"></i>
+              <h4>Attractive Flavor <span>ALWAYS LISTEN</span></h4>
+              <p>We offer a 24/7 customer hotline so you’re never alone if you have a question.</p>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+    <footer class="ps-footer">
+      <div class="ps-footer__content">
+        <div class="ps-container">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ">
+              <div class="ps-site-info"><a class="ps-logo" href="index.html"><img src="images/logo-dark.png" alt=""></a>
+                <p>Tart bear claw cake tiramisu chocolate bar gummies dragée lemon drops brownie.</p>
+                <ul class="ps-list--social">
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+              <form class="ps-form--subscribe-offer" action="do_action" method="post">
+                <h4>Get news & offer</h4>
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Your Email...">
+                  <button>Subscribe</button>
+                </div>
+                <p>* Don't worry, we never spam</p>
+              </form>
+              <div class="ps-footer__contact">
+                <h4>Contact with me</h4>
+                <p>PO Box 16122 Collins Street West,Victoria 8007 Australia</p>
+                <P>(+84 ) 7534 9773, (+84 ) 874 548</P>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+              <div class="ps-footer__open">
+                <h4>Time to Open</h4>
+                <p>
+                  Monday - Friday: <br>08:00 am - 08:30 pm <br>
+                  Saturday - Sunday:<br>
+                  10:00 am - 16:30 pm
+                </p>
+              </div>
+              <ul class="ps-list--payment">
+                <li><a href="#"><img src="images/payment-method/visa.png" alt=""></a></li>
+                <li><a href="#"><img src="images/payment-method/master-card.png" alt=""></a></li>
+                <li><a href="#"><img src="images/payment-method/paypal.png" alt=""></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ps-footer__copyright">
         <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                    </div>
-                </div>
-            </div>
+          <p>
+            ©  Copyright by <strong>Bready Store</strong>. Design by<a href="#"> Alena Studio.</a></p>
         </div>
+      </div>
+    </footer>
+    <div id="back2top"><i class="fa fa-angle-up"></i></div>
+    <div class="ps-loading">
+      <div class="rectangle-bounce">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
     </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
+    <!-- Plugins-->
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="plugins/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="plugins/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+    <script src="plugins/jquery.waypoints.min.js"></script>
+    <script src="plugins/jquery.countTo.js"></script>
+    <script src="plugins/jquery.matchHeight-min.js"></script>
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="plugins/gmap3.min.js"></script>
+    <script src="plugins/lightGallery-master/dist/js/lightgallery-all.min.js"></script>
+    <script src="plugins/slick/slick/slick.min.js"></script>
+    <script src="plugins/slick-animation.min.js"></script>
+    <script src="plugins/jquery.slimscroll.min.js"></script>
+    <!-- Custom scripts-->
     <script src="js/main.js"></script>
-</body>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsUcTjt43mTheN9ruCsQVgBE-wgN6_AfY&amp;region=GB"></script>
+  </body>
 </html>

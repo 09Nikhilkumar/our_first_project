@@ -140,7 +140,7 @@
                 <li><a href="homepage-3.html">Homepage 3</a></li>
               </ul>
             </li>
-            <li class="current-menu-item "><a href="about.html">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li class="menu-item-has-children"><a href="product-listing.html">product</a><span class="sub-toggle"><i class="fa fa-angle-down"></i></span>
               <ul class="sub-menu">
                 <li><a href="product-listing.html">Product List</a></li>
@@ -148,7 +148,7 @@
                 <li><a href="order-form.html">Order Form</a></li>
               </ul>
             </li>
-            <li class="menu-item-has-children"><a href="about.html">Pages</a><span class="sub-toggle"><i class="fa fa-angle-down"></i></span>
+            <li class="current-menu-item menu-item-has-children"><a href="about.html">Pages</a><span class="sub-toggle"><i class="fa fa-angle-down"></i></span>
               <ul class="sub-menu">
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="cart.html">Shopping Cart</a></li>
@@ -177,229 +177,106 @@
     </header>
     <div class="ps-hero bg--cover" data-background="images/hero/about.jpg">
       <div class="ps-hero__content">
-        <h1> About Us</h1>
+        <h1>Shopping Cart</h1>
         <div class="ps-breadcrumb">
           <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
-            <li class="active">About Us</li>
+            <li class="active">Shopping Cart</li>
           </ol>
         </div>
       </div>
     </div>
-    <!-- About Intro-->
-    <div class="ps-about-intro">
+    <main class="ps-main">
       <div class="ps-container">
-        <div class="ps-section__header text-center">
-          <h3 class="ps-section__title">Delicieux</h3>
-          <p>WELCOME TO THE STORE</p><span><img src="images/icons/floral.png" alt=""></span>
-        </div>
-        <div class="ps-section__content">
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-              <div class="ps-block--award"><img src="images/icons/award-1.png" alt="">
-                <h4> BAKERY OF THE YEAR <span>2011 -2012</span></h4>
-                <p>Tart bear claw cake tiramisu chocolate bar gummies dragée lemon drops brownie. Jujubes chocolate cake sesame snaps</p>
+        <div class="ps-cart-listing">
+          <div class="table-responsive">
+            <table class="table ps-table ps-table--listing">
+              <thead>
+                <tr>
+                  <th>All Products</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a class="ps-product--table" href="product-detail.html"><img class="mr-15" src="images/products/1.png" alt=""> Air jordan One mid</a></td>
+                  <td>$150</td>
+                  <td>
+                    <div class="form-group--number">
+                      <button class="minus"><span>-</span></button>
+                      <input class="form-control" type="text" value="1">
+                      <button class="plus"><span>+</span></button>
+                    </div>
+                  </td>
+                  <td><strong>$300</strong></td>
+                  <td>
+                    <div class="ps-remove"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a class="ps-product--table" href="product-detail.html"><img class="mr-15" src="images/products/2.png" alt=""> The Crusty Croissant</a></td>
+                  <td>$150</td>
+                  <td>
+                    <div class="form-group--number">
+                      <button class="minus"><span>-</span></button>
+                      <input class="form-control" type="text" value="1">
+                      <button class="plus"><span>+</span></button>
+                    </div>
+                  </td>
+                  <td><strong>$300</strong></td>
+                  <td>
+                    <div class="ps-remove"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="ps-cart__actions">
+            <div class="ps-cart__promotion">
+              <div class="form-group">
+                <div class="ps-form--icon"><i class="fa fa-angle-right"></i>
+                  <input class="form-control" type="text" placeholder="Promo Code">
+                </div>
+              </div>
+              <div class="form-group">
+                <button class="ps-btn ps-btn--gray">Continue Shopping</button>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-              <div class="ps-block--award"><img src="images/icons/award-2.png" alt="">
-                <h4> CUPCAKES SHOP OF THE YEAR <span>2012 - 2015</span></h4>
-                <p>Tart bear claw cake tiramisu chocolate bar gummies dragée lemon drops brownie. Jujubes chocolate cake sesame snaps</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-              <div class="ps-block--award"><img src="images/icons/award-2.png" alt="">
-                <h4> BAKERY OF THE MONTH <span>2017 - 2018</span></h4>
-                <p>Tart bear claw cake tiramisu chocolate bar gummies dragée lemon drops brownie. Jujubes chocolate cake sesame snaps</p>
-              </div>
+            <div class="ps-cart__total">
+              <h3>Total Price: <span> 2599.00 $</span></h3><a class="ps-btn" href="checkout.html">Process to checkout</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="ps-block--signature">
-        <div class="ps-block__thumbnail"><img src="images/signature.png" alt=""></div>
-        <div class="ps-block__content">
-          <p>“It seems that every country that can get its hands on butter has its opinion of what butter cream frosting should be. Some are made with eggs and butter.”</p><small>Sunshine -  CEO Bakery</small><img src="images/signature-2.png" alt="">
-        </div>
-      </div>
-      <div class="ps-about-number">
-        <div class="ps-container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
-              <div class="ps-block--countdown"><i class="ba-biscuit-1"></i><span class="number ps-block__number" data-from="0" data-to="165"> 165</span>
-                <h4>Baker & Chef</h4>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
-              <div class="ps-block--countdown"><i class="ba-mixer"></i><span class="number ps-block__number" data-from="0" data-to="2130"> 2130</span>
-                <h4>Recepies</h4>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
-              <div class="ps-block--countdown"><i class="ba-bread-2"></i><span class="number ps-block__number" data-from="0" data-to="3450"> 3450</span>
-                <h4>Bread per day</h4>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
-              <div class="ps-block--countdown"><i class="ba-flour"></i><span class="number ps-block__number" data-from="0" data-to="345"> 345</span>
-                <h4>Kilos of flour</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--.ps-our-people-->
-    <div class="ps-our-people">
+    </main>
+    <div class="ps-site-features">
       <div class="ps-container">
-        <div class="ps-section__header text-center">
-          <h3 class="ps-section__title">Our Chef</h3>
-          <p>Work with Passion</p><span><img src="images/icons/floral.png" alt=""></span>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-          <div class="ps-block--people">
-            <div class="ps-block__thumbnail"><img src="images/people/1.png" alt=""></div>
-            <div class="ps-block__content">
-              <div class="ps-block__header">
-                <h3>Juan Olson</h3><span>Master Chef</span>
-              </div>
-              <p>“Now, if you are interested in being the best player, getting really good money and knowing some tricks and  …”</p>
-              <div class="ps-block__footer">
-                <p>Tel: 947 577 57 <br><a href="#">juanmaster@bready.com</a></p>
-                <ul class="ps-list--social">
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
-              </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+            <div class="ps-block--iconbox"><i class="ba-delivery-truck-2"></i>
+              <h4>Free Shipping <span> On Order Over$199</h4>
+              <p>Want to track a package? Find tracking information and order details from Your Orders.</p>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-          <div class="ps-block--people">
-            <div class="ps-block__thumbnail"><img src="images/people/2.png" alt=""></div>
-            <div class="ps-block__content">
-              <div class="ps-block__header">
-                <h3>Harold Santos</h3><span>Manager</span>
-              </div>
-              <p>“Now, if you are interested in being the best player, getting really good money and knowing some tricks and  …”</p>
-              <div class="ps-block__footer">
-                <p>Tel: 947 577 57 <br><a href="#">juanmaster@bready.com</a></p>
-                <ul class="ps-list--social">
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
-              </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+            <div class="ps-block--iconbox"><i class="ba-biscuit-1"></i>
+              <h4>Master Chef<span> WITH PASSION</h4>
+              <p>Shop zillions of finds, with new arrivals added daily.</p>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-          <div class="ps-block--people">
-            <div class="ps-block__thumbnail"><img src="images/people/3.png" alt=""></div>
-            <div class="ps-block__content">
-              <div class="ps-block__header">
-                <h3>Joel Harmon</h3><span>Master Chef</span>
-              </div>
-              <p>“Now, if you are interested in being the best player, getting really good money and knowing some tricks and  …”</p>
-              <div class="ps-block__footer">
-                <p>Tel: 947 577 57 <br><a href="#">juanmaster@bready.com</a></p>
-                <ul class="ps-list--social">
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
-              </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+            <div class="ps-block--iconbox"><i class="ba-flour"></i>
+              <h4>Natural Materials<span> protect your family</h4>
+              <p>We always ensure the safety of all products of store</p>
             </div>
           </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-          <div class="ps-block--people">
-            <div class="ps-block__thumbnail"><img src="images/people/4.png" alt=""></div>
-            <div class="ps-block__content">
-              <div class="ps-block__header">
-                <h3>Ricardo Manning</h3><span>Master Chef</span>
-              </div>
-              <p>“Now, if you are interested in being the best player, getting really good money and knowing some tricks and  …”</p>
-              <div class="ps-block__footer">
-                <p>Tel: 947 577 57 <br><a href="#">juanmaster@bready.com</a></p>
-                <ul class="ps-list--social">
-                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Testimonials-->
-    <div class="ps-testimonials bg--parallax" data-background="images/bg/testimonials.jpg">
-      <div class="ps-container">
-        <div class="ps-carousel--testimonial owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="5000" data-owl-gap="0" data-owl-nav="false" data-owl-dots="true" data-owl-item="1" data-owl-item-xs="1" data-owl-item-sm="1" data-owl-item-md="1" data-owl-item-lg="1" data-owl-duration="1000" data-owl-mousedrag="off" data-owl-animate-in="fadeIn" data-owl-animate-out="fadeOut">
-          <div class="ps-block--tesimonial">
-            <div class="ps-block__user"><img src="images/user/1.jpg" alt=""></div>
-            <div class="ps-block__content">
-              <select class="ps-rating">
-                <option value="1">1</option>
-                <option value="1">2</option>
-                <option value="1">3</option>
-                <option value="1">4</option>
-                <option value="2">5</option>
-              </select>
-              <p>“Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit cheesecake. Cookie topping sweet muffin pudding tart bear claw sugar plum croissant.”</p>
-            </div>
-            <div class="ps-block__footer">
-              <p><strong>Logan May</strong>  - CEO & Founder Invision</p>
-            </div>
-          </div>
-          <div class="ps-block--tesimonial">
-            <div class="ps-block__user"><img src="images/user/2.jpg" alt=""></div>
-            <div class="ps-block__content">
-              <select class="ps-rating">
-                <option value="1">1</option>
-                <option value="1">2</option>
-                <option value="1">3</option>
-                <option value="1">4</option>
-                <option value="2">5</option>
-              </select>
-              <p>“Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit cheesecake. Cookie topping sweet muffin pudding tart bear claw sugar plum croissant.”</p>
-            </div>
-            <div class="ps-block__footer">
-              <p><strong>Logan May</strong>  - CEO & Founder Invision</p>
-            </div>
-          </div>
-          <div class="ps-block--tesimonial">
-            <div class="ps-block__user"><img src="images/user/3.jpg" alt=""></div>
-            <div class="ps-block__content">
-              <select class="ps-rating">
-                <option value="1">1</option>
-                <option value="1">2</option>
-                <option value="1">3</option>
-                <option value="1">4</option>
-                <option value="2">5</option>
-              </select>
-              <p>“Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit cheesecake. Cookie topping sweet muffin pudding tart bear claw sugar plum croissant.”</p>
-            </div>
-            <div class="ps-block__footer">
-              <p><strong>Logan May</strong>  - CEO & Founder Invision</p>
-            </div>
-          </div>
-          <div class="ps-block--tesimonial">
-            <div class="ps-block__user"><img src="images/user/4.jpg" alt=""></div>
-            <div class="ps-block__content">
-              <select class="ps-rating">
-                <option value="1">1</option>
-                <option value="1">2</option>
-                <option value="1">3</option>
-                <option value="1">4</option>
-                <option value="2">5</option>
-              </select>
-              <p>“Dessert pudding dessert jelly beans cupcake sweet caramels gingerbread. Fruitcake biscuit cheesecake. Cookie topping sweet muffin pudding tart bear claw sugar plum croissant.”</p>
-            </div>
-            <div class="ps-block__footer">
-              <p><strong>Logan May</strong>  - CEO & Founder Invision</p>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+            <div class="ps-block--iconbox"><i class="ba-cake-3"></i>
+              <h4>Attractive Flavor <span>ALWAYS LISTEN</span></h4>
+              <p>We offer a 24/7 customer hotline so you’re never alone if you have a question.</p>
             </div>
           </div>
         </div>
